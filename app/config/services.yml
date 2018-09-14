@@ -33,6 +33,7 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
-    AppBundel\DataFixtures\:
-        resource: '../../src/AppBundle/DataFixtures'
-        tags: ['doctrine.fixture.orm']
+#    The following configure doesn't working ,no reasons.
+#    AppBundel\DataFixtures\:
+#        resource: '../../src/AppBundle/DataFixtures'
+#        tags: ['doctrine.fixture.orm']

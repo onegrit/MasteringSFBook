@@ -10,10 +10,11 @@ namespace AppBundle\DataFixtures\ORM;
 
 
 use AppBundle\Entity\User;
+use Doctrine\Bundle\FixturesBundle\ORMFixtureInterface;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
-class LoadUsersFixture implements FixtureInterface
+class LoadUsersFixture implements ORMFixtureInterface
 {
     public function load(ObjectManager $manager)
     {
